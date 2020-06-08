@@ -2,6 +2,8 @@
 
 My notes for dealing with more complex scenarios than noted in [GRPC Build Integration](https://github.com/grpc/grpc/blob/master/src/csharp/BUILD-INTEGRATION.md). I'm using Grpc.Tools to build the proto files.
 
+You can get around most issues by using custom build scripts and calling the proto compiler directly, but I wanted to push the "normal" tools and see if we could deal with the issues more elegantly. It's always easier if everything just works when you hit "Build."
+
 There are a number of things that trip up the default compilation:
 
 ## Proto file location
