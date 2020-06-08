@@ -39,4 +39,9 @@ There are a number of ways to tackle this:
         - This also appears to work: they just need to be there to enable `package2` to compile, but the actual linked classes are from the real `ProtoBuild1` project.
         - Caveat emptor!
 
+## Useful references
+
+- [GRPC Build Integration](https://github.com/grpc/grpc/blob/master/src/csharp/BUILD-INTEGRATION.md)
+- [Grpc.Tools source code](https://github.com/grpc/grpc/tree/master/src/csharp/Grpc.Tools)
+- [MSBuild well-known item metadata](https://docs.microsoft.com/en-us/visualstudio/msbuild/msbuild-well-known-item-metadata?view=vs-2019)
 
