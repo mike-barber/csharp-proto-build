@@ -4,12 +4,7 @@ package package1.namespace1;
 
 enum TestEnum {
   UNSPECIFIED = 0;
-  FIRST = 1;
-  SECOND = 2;
-  THIRD = 3;
 }
 
 message Thing1 {
-  string name = 1;
-  TestEnum kind = 2;
 }

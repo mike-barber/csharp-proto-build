@@ -2,7 +2,7 @@ using System;
 using Google.Protobuf;
 using Xunit;
 
-namespace Test.ProtoBuildAll
+namespace Test.Common
 {
     public class CheckBuilt
     {

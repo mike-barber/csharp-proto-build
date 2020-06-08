@@ -1,0 +1,6 @@
+syntax = "proto3";
+
+package package1.namespace2;
+
+message Thing2 {
+}
