@@ -56,5 +56,26 @@ namespace Test.Common
             };
             Assert.NotNull(Package2.Namespace2.Payload.Parser.ParseFrom(payload.ToByteArray()));
         }
+
+        [Fact]
+        public void EnumValues()
+        {
+            // could be a problem where we've used a fake enum with only one thing specified
+            // for ProtoBuild2Fake
+
+            // more of a compilation check
+            Assert.Equal(0, (int)Package1.Namespace1.TestEnum.Unspecified);
+            Assert.Equal(1, (int)Package1.Namespace1.TestEnum.First);
+            Assert.Equal(2, (int)Package1.Namespace1.TestEnum.Second);
+            Assert.Equal(3, (int)Package1.Namespace1.TestEnum.Third);
+        }
+
+        [Fact]
+        public void Descriptors()
+        {
+            Assert.Equal("package1.namespace1.Thing1", Package1.Namespace1.Thing1.Descriptor.FullName);
+            Assert.Equal("package1.namespace1.Thing2", Package1.Namespace1.Thing2.Descriptor.FullName);
+            Assert.Equal("package2.namespace2.Payload", Package2.Namespace2.Payload.Descriptor.FullName);
+        }
     }
 }
