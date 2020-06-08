@@ -1,23 +1,28 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30128.74
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{AD971797-C43D-4F3C-A9A3-ADD8A88A5D65}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtoBuild1", "src\ProtoBuild1\ProtoBuild1.csproj", "{5D91505E-D90D-4262-A99C-BC74A87F9FFD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProtoBuild1", "src\ProtoBuild1\ProtoBuild1.csproj", "{5D91505E-D90D-4262-A99C-BC74A87F9FFD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtoBuild2", "src\ProtoBuild2\ProtoBuild2.csproj", "{BC873727-AAAF-4D4F-AB55-4ACFCCDE8A82}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProtoBuild2", "src\ProtoBuild2\ProtoBuild2.csproj", "{BC873727-AAAF-4D4F-AB55-4ACFCCDE8A82}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtoBuildAll", "src\ProtoBuildAll\ProtoBuildAll.csproj", "{02534327-E7A8-4CE6-B0B2-D8D36CA93B23}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProtoBuildAll", "src\ProtoBuildAll\ProtoBuildAll.csproj", "{02534327-E7A8-4CE6-B0B2-D8D36CA93B23}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.ProtoBuildSeparate", "src\Test.ProtoBuildSeparate\Test.ProtoBuildSeparate.csproj", "{6ED03A70-12D0-467F-AEBB-5BE6E3196041}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test.ProtoBuildSeparate", "src\Test.ProtoBuildSeparate\Test.ProtoBuildSeparate.csproj", "{6ED03A70-12D0-467F-AEBB-5BE6E3196041}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.ProtoBuildAll", "src\Test.ProtoBuildAll\Test.ProtoBuildAll.csproj", "{933C3860-649A-4900-A9AA-912E5B580CF6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test.ProtoBuildAll", "src\Test.ProtoBuildAll\Test.ProtoBuildAll.csproj", "{933C3860-649A-4900-A9AA-912E5B580CF6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtoBuild2Fake", "src\ProtoBuild2Fake\ProtoBuild2Fake.csproj", "{7CF32D0A-A639-4B5F-AA0E-E810EC6198D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProtoBuild2Fake", "src\ProtoBuild2Fake\ProtoBuild2Fake.csproj", "{7CF32D0A-A639-4B5F-AA0E-E810EC6198D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.ProtoBuildSeparateFake", "src\Test.ProtoBuildSeparateFake\Test.ProtoBuildSeparateFake.csproj", "{83EF42CF-FDE8-4DD1-9287-2199283E4607}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test.ProtoBuildSeparateFake", "src\Test.ProtoBuildSeparateFake\Test.ProtoBuildSeparateFake.csproj", "{83EF42CF-FDE8-4DD1-9287-2199283E4607}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E45D5D1B-8F5B-4CC0-9AC1-42F373F9CE0A}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,9 +32,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{5D91505E-D90D-4262-A99C-BC74A87F9FFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -117,6 +119,9 @@ Global
 		{83EF42CF-FDE8-4DD1-9287-2199283E4607}.Release|x86.ActiveCfg = Release|Any CPU
 		{83EF42CF-FDE8-4DD1-9287-2199283E4607}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{5D91505E-D90D-4262-A99C-BC74A87F9FFD} = {AD971797-C43D-4F3C-A9A3-ADD8A88A5D65}
 		{BC873727-AAAF-4D4F-AB55-4ACFCCDE8A82} = {AD971797-C43D-4F3C-A9A3-ADD8A88A5D65}
@@ -125,5 +130,8 @@ Global
 		{933C3860-649A-4900-A9AA-912E5B580CF6} = {AD971797-C43D-4F3C-A9A3-ADD8A88A5D65}
 		{7CF32D0A-A639-4B5F-AA0E-E810EC6198D9} = {AD971797-C43D-4F3C-A9A3-ADD8A88A5D65}
 		{83EF42CF-FDE8-4DD1-9287-2199283E4607} = {AD971797-C43D-4F3C-A9A3-ADD8A88A5D65}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {67E75931-4A5D-4FBD-8B5A-527170213B2E}
 	EndGlobalSection
 EndGlobal
