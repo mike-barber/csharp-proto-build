@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Protobuf ProtoRoot="../protos-package2" Include="../protos-package2/**/*.proto" GrpcServices="none" OutputDir="$(IntermediateOutputPath)/%(RelativeDir)" AdditionalImportDirs="../protos-package1" />
+    <Protobuf ProtoRoot="../protos-package2" Include="../protos-package2/**/*.proto" GrpcServices="none" AdditionalImportDirs="../protos-package1" />
   </ItemGroup>
 
 </Project>

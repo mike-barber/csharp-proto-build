@@ -18,7 +18,7 @@
 
   <ItemGroup>
     <!-- using fake equivalent for package1, instead of the real proto files; doesn't care because it doesn't include them -->
-    <Protobuf ProtoRoot="../protos-package2" Include="../protos-package2/**/*.proto" GrpcServices="none" OutputDir="$(IntermediateOutputPath)/%(RelativeDir)" AdditionalImportDirs="../protos-package1-fake" />
+    <Protobuf ProtoRoot="../protos-package2" Include="../protos-package2/**/*.proto" GrpcServices="none" AdditionalImportDirs="../protos-package1-fake" />
   </ItemGroup>
 
 </Project>

@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Protobuf ProtoRoot="../protos-package1" Include="../protos-package1/**/*.proto" GrpcServices="none" OutputDir="$(IntermediateOutputPath)/%(RelativeDir)" />
+    <Protobuf ProtoRoot="../protos-package1" Include="../protos-package1/**/*.proto" GrpcServices="none" />
   </ItemGroup>
 
 </Project>
