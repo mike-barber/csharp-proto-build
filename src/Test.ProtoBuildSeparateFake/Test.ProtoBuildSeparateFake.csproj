@@ -18,4 +18,8 @@
     <ProjectReference Include="..\ProtoBuild2Fake\ProtoBuild2Fake.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Include="..\Test.ProtoBuildAll\CheckBuilt.cs" />
+  </ItemGroup>
+
 </Project>
