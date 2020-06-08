@@ -12,8 +12,10 @@
     </PackageReference>
   </ItemGroup>
 
+  <!-- Refer to https://docs.microsoft.com/en-us/visualstudio/msbuild/msbuild-well-known-item-metadata?view=vs-2019 for details -->
+  <!-- Using RecursiveDir instead of RelativeDir because the latter includes the .. part and lands up outside the build directory -->
   <ItemGroup>
-    <Protobuf ProtoRoot="../protos-package1" Include="../protos-package1/**/*.proto" GrpcServices="none" OutputDir="$(IntermediateOutputPath)/%(RelativeDir)" />
+    <Protobuf ProtoRoot="../protos-package1" Include="../protos-package1/**/*.proto" GrpcServices="none" OutputDir="$(IntermediateOutputPath)/%(RecursiveDir)" />
   </ItemGroup>
 
 </Project>

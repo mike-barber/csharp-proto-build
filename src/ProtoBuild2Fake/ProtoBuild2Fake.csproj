@@ -16,9 +16,11 @@
     </PackageReference>
   </ItemGroup>
 
+  <!-- OutputDir puts files in their own directories and prevents identical names from overwriting the same .cs file -->
+  <!-- ProtoRoot and AdditionalImportDirs ensures files can find eachother even in different directory structures -->
   <ItemGroup>
     <!-- using fake equivalent for package1, instead of the real proto files; doesn't care because it doesn't include them -->
-    <Protobuf ProtoRoot="../protos-package2" Include="../protos-package2/**/*.proto" GrpcServices="none" OutputDir="$(IntermediateOutputPath)/%(RelativeDir)" AdditionalImportDirs="../protos-package1-fake" />
+    <Protobuf ProtoRoot="../protos-package2" Include="../protos-package2/**/*.proto" GrpcServices="none" OutputDir="$(IntermediateOutputPath)/%(RecursiveDir)" AdditionalImportDirs="../protos-package1-fake" />
   </ItemGroup>
 
 </Project>
