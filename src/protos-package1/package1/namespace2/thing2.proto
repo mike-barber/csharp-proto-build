@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package package1.namespace2;
+
+// although it is in a different namespace, this will cause a conflict
+message Thing2 {
+  string name = 1;
+}

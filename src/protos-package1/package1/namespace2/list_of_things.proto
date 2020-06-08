@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package package1.namespace2;
+
+// refer to
+// https://developers.google.com/protocol-buffers/docs/proto3#importing-definitions
+// review how `import public` works
+import "package1/namespace1/thing1.proto";
+import "package1/namespace1/thing2.proto";
+
+message ListOfThings {
+  repeated package1.namespace1.Thing1 things_1 = 1;
+  repeated package1.namespace1.Thing2 things_2 = 2;
+}
