@@ -17,8 +17,4 @@
     <ProjectReference Include="..\ProtoBuildAll\ProtoBuildAll.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Compile Include="..\Test.Common\CheckBuilt.cs" Link="CheckBuilt.cs" />
-  </ItemGroup>
-
 </Project>
