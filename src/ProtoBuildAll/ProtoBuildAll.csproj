@@ -12,6 +12,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <!-- OutputDir puts files in their own directories and prevents identical names from overwriting the same .cs file -->
+  <!-- ProtoRoot and AdditionalImportDirs ensures files can find eachother even in different directory structures -->
   <ItemGroup>
     <Protobuf ProtoRoot="../protos-package1" Include="../protos-package1/**/*.proto" GrpcServices="none" OutputDir="$(IntermediateOutputPath)/%(RelativeDir)" />
     <Protobuf ProtoRoot="../protos-package2" Include="../protos-package2/**/*.proto" AdditionalImportDirs="../protos-package1" GrpcServices="none" OutputDir="$(IntermediateOutputPath)/%(RelativeDir)" />
